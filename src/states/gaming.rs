@@ -39,8 +39,8 @@ impl Gaming {
 
 fn center_rect(rect: Rect, background: &Rect) -> Rect {
     Rect::new(
-        background.width / 2 - rect.width / 2,
-        background.height / 2 - rect.height / 2,
+        rect.x + background.width / 2 - rect.width / 2,
+        rect.y + background.height / 2 - rect.height / 2,
         rect.width,
         rect.height,
     )
