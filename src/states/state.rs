@@ -1,6 +1,6 @@
+use crossterm::event::Event;
 use std::io::Stdout;
 use tui::{backend::CrosstermBackend, Frame};
-use crossterm::event::Event;
 
 pub trait GameState {
     // TODO add a separate method that runs before `terminal.draw` if we get flickering
