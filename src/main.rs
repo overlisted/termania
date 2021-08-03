@@ -68,7 +68,7 @@ const MAP: [[bool; 4]; 39] = [
 ];
 
 #[derive(FromArgs)]
-/// A simple reimplementation of Quaver/osu!mania that runs in the terminal.
+/// A simple reimplementation of Quaver/osu!mania that can run in a terminal.
 struct Config {
     /// the framerate that the game will rerender (and process input) at.
     #[argh(option, short = 'f')]
